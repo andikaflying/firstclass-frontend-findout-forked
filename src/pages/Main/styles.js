@@ -17,7 +17,7 @@ export const LaunchingSoon = styled.img`
 
   @media ${devices.responsive} {
     left: -0.25rem;
-    width: 120px;
+    width: 180px;
   }
 `;
 
