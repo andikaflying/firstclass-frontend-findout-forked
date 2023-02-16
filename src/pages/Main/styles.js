@@ -3,9 +3,32 @@ import { devices } from "../../utils/constant";
 
 export const ImageBox = styled.div`
   position: relative;
+  height: 720px;
 
   .imageBox:hover img.chevron {
     display: block;
+  }
+
+  &:hover:after,
+  &:hover:before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &:hover:after {
+    box-shadow: inset 150px 0px 60px 0px rgb(0 0 0 / 30%);
+  }
+
+  &:hover:before {
+    box-shadow: inset -150px 0px 60px 0px rgb(0 0 0 / 30%);
+  }
+
+  @media ${devices.responsive} {
+    height: 360px;
   }
 `;
 
@@ -14,6 +37,7 @@ export const LaunchingSoon = styled.img`
   top: 0.75rem;
   left: -0.5rem;
   width: 240px;
+  z-index: 10;
 
   @media ${devices.responsive} {
     left: -0.25rem;
@@ -28,6 +52,7 @@ export const Chevron = styled.img`
   margin: auto 0;
   width: 2rem;
   display: none;
+  z-index: 10;
 
   ${(props) => {
     switch (props.position) {
