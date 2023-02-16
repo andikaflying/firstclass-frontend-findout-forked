@@ -68,19 +68,12 @@ export default function Main({
             src={pic}
           />
         )}
-        <LaunchingSoon
-          className="launchingSoon"
-          src={process.env.PUBLIC_URL + "/launching-soon.svg"}
-        />
-        <Chevron
-          className="chevron"
-          position="left"
-          src={process.env.PUBLIC_URL + "/chevron-left.svg"}
-        />
+        <LaunchingSoon className="launchingSoon" src="./launching-soon.svg" />
+        <Chevron className="chevron" position="left" src="./chevron-left.svg" />
         <Chevron
           className="chevron"
           position="right"
-          src={process.env.PUBLIC_URL + "/chevron-right.svg"}
+          src="./chevron-right.svg"
         />
       </ImageBox>
       <div className="mainContent">
