@@ -80,10 +80,7 @@ export default function Main({
         <div className="topContent">
           <AddressBox>
             <AddressHeadline>
-              <img
-                className="icon"
-                src={process.env.PUBLIC_URL + "/building-icon.svg"}
-              />
+              <img className="icon" src="./building-icon.svg" />
               <div className="addressHeadline">
                 <h2 className="title">{title}</h2>
                 <span className="address">{address}</span>
