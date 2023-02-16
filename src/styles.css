@@ -1,0 +1,54 @@
+.App {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Avenir";
+  color: #1a2258;
+  font-size: 1rem;
+}
+
+.mainPic {
+  height: 720px;
+  width: 100%;
+}
+
+.imageBox:hover img.chevron {
+  display: block;
+}
+
+.mainContent {
+  margin: 1.5rem;
+}
+
+.topContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skeleton {
+  height: 720px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .mainPic {
+    height: 360px;
+  }
+
+  .mainContent {
+    margin: 1rem;
+  }
+
+  .topContent {
+    flex-direction: column;
+  }
+
+  .skeleton {
+    height: 360px;
+  }
+}
+
+.imageBox::after {
+}
