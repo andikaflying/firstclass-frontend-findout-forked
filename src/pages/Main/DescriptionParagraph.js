@@ -5,6 +5,10 @@ import { devices } from "../../utils/constant";
 const Paragraph = styled.p`
   padding-top: 2.25rem;
   white-space: pre-wrap;
+
+  @media ${devices.responsive} {
+    font-size: 0.875rem;
+  }
 `;
 
 const DescriptionParagraph = ({
